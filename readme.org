@@ -1,0 +1,37 @@
+* Warmup 1 - Create An NPM Package
+
+** How to add dependency in  auto ?
+#+BEGIN_QUOTE
+Using the --save-dev option to add it to package.json as a package dependency:
+#+END_QUOTE
+
+** npm link 
++ Add your target directory to .zshrc or .bashrc as the format below
+#+BEGIN_SRC sh
+export NODE_PATH=/usr/local/lib/node_modules
+#+END_SRC
+
+** npm unlink -g greet
++ distinguish the difference of -g and not -g 
+
+** man chmod
++ why use =chmod a+x= ???
+
+** minimist package
++ how to use 
+  #+BEGIN_SRC js
+var argv = require('minimist')(process.argv.slice(2));
+  #+END_SRC
++ Use the minimist package to parse command arguments
++ =-x=  
+  - only one alphabet
+  - if =-xy= will get ={x:true, y:true}=
+  - if =-x 32=  will get ={x:32}=
++ =--xx=
+  - you can add value to it by =--xx yy= or =--xx=yy=, and get ={xx:'yy'}=
+  - the same as =-x= if you only use =--xx=, you get ={xx:true}=
+
+** Shebang (Unix)  
++ the development of shebang
++ the advantage of =!#/usr/bin/env node= (compare with =!#/usr/bin/node=)
+
