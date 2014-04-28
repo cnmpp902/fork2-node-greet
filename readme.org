@@ -34,4 +34,3 @@ var argv = require('minimist')(process.argv.slice(2));
 ** Shebang (Unix)  
 + the development of shebang
 + the advantage of =!#/usr/bin/env node= (compare with =!#/usr/bin/node=)
-
