@@ -1,5 +1,4 @@
 * Warmup 1 - Create An NPM Package
-
 ** How to add dependency in  auto ?
 #+BEGIN_QUOTE
 Using the --save-dev option to add it to package.json as a package dependency:
@@ -34,3 +33,32 @@ var argv = require('minimist')(process.argv.slice(2));
 ** Shebang (Unix)  
 + the development of shebang
 + the advantage of =!#/usr/bin/env node= (compare with =!#/usr/bin/node=)
+* Warmup 2 - Setting Up Mocha For Testing
+** mocha 
+- [[http://visionmedia.github.io/mocha/][link]]
+- why use =mocha -R spec= 
+  + from =mocha -h=
+     #+BEGIN_QUOTE
+-R, --reporter <name> specify the reporter to use
+     #+END_QUOTE
+  + so, it is a command that we choose the =spec= reporter.
+  + any other reporters? how to choose reporters?
+    - [[http://visionmedia.github.io/mocha/#reporters][reporters]]
+    - I like the nyan reporter,  Miao~~~
+
+** chai
+- [[http://chaijs.com][link]]
+- [[http://chaijs.com/api/bdd/][BDD with chai]]
+
+** helper
++ why?
+  #+BEGIN_QUOTE
+As your test suite grows bigger into multiple files, you might find it helpful to be able to share code across all files.
+  #+END_QUOTE
++ difference when running mocha
+  #+BEGIN_SRC sh
+mocha --require test/support/helper
+  #+END_SRC
+
++ use global value in help
+  
