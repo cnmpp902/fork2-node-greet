@@ -68,3 +68,16 @@ mocha --require test/support/helper
 #+BEGIN_SRC sh
 coffee --watch --compile --output lib src
 #+END_SRC
+
++ a tool to convert js to coffee, helpful when you are new to coffee
+  - [[http://js2coffee.org][js2coffee]]
+** task runners / project builders 
++ Makefile for small project
+  - =.PHONY= 
+  - how to depend on other process?
+
+** test with coffee
+#+BEGIN_SRC sh 
+//mocha.opts
+--compilers coffee:coffee-script/register
+#+END_SRC
