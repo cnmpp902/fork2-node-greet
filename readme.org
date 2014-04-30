@@ -45,6 +45,7 @@ var argv = require('minimist')(process.argv.slice(2));
   + any other reporters? how to choose reporters?
     - [[http://visionmedia.github.io/mocha/#reporters][reporters]]
     - I like the nyan reporter,  Miao~~~
+- [[http://code.tutsplus.com/tutorials/better-coffeescript-testing-with-mocha--net-24696][with coffee]]
 
 ** chai
 - [[http://chaijs.com][link]]
@@ -62,3 +63,8 @@ mocha --require test/support/helper
 
 + use global value in help
   
+* Warmup 3 - Using CoffeeScript
+** automatically compile
+#+BEGIN_SRC sh
+coffee --watch --compile --output lib src
+#+END_SRC
