@@ -35,7 +35,7 @@ var argv = require('minimist')(process.argv.slice(2));
 + the advantage of =!#/usr/bin/env node= (compare with =!#/usr/bin/node=)
 * Warmup 2 - Setting Up Mocha For Testing
 ** mocha 
-- [[http://visionmedia.github.io/mocha/][link]]
+- [[http://mochajs.org/][link]]
 - why use =mocha -R spec= 
   + from =mocha -h=
      #+BEGIN_QUOTE
@@ -43,7 +43,7 @@ var argv = require('minimist')(process.argv.slice(2));
      #+END_QUOTE
   + so, it is a command that we choose the =spec= reporter.
   + any other reporters? how to choose reporters?
-    - [[http://visionmedia.github.io/mocha/#reporters][reporters]]
+    - [[http://mochajs.org/#reporters][reporters]]
     - I like the nyan reporter,  Miao~~~
 - [[http://code.tutsplus.com/tutorials/better-coffeescript-testing-with-mocha--net-24696][with coffee]]
 
